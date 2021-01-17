@@ -1,164 +1,18 @@
-<!DOCTYPE html>
-<html lang ="en">
-  <head>
-    <title>Yossshhhh's secret title</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Yossshhhh's super secret meta description">
-    <meta name="keywords" content="Yossshhhh,CSE110,Lab2,Secret,meta">
-    <meta name="author" content="Adam Yoshinaga">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mystyle.css">
-    <style>
-      .mydiv {
-        border: 5px outset violet;
-        background-color: lightblue;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <div class="mydiv">
-        <header> <i>Welcome</i> to <b>Yossshhhh</b>(Adam Yoshinaga)'s Secondary Webpage in HTML </header>
-      </div>
-      <aside>
-        <h4>Yoshinaga</h4>
-        <p> <span style="color:darkorange">Yoshinaga</span> is an award winning Japanese last name. It is said that every human being with the last name Yoshinaga will conquer the world, or something along the lines of that.</p>
-      </aside>
-      <nav>
-        <a href="https://yossshhhh.github.io">my first webpage</a>
-      </nav>
-      <hr>
-      <section>
-       <h1> Error 404: h1 not found</h1>
-       <p> Just kidding haha there's gonna be a lot of random information on this website, plz enjoy :-) 
-	    Here's a really cool and hip song I recently found!!</p>
-	<audio controls>
-  		<source src="astley.mp3" type="audio/ogg">
- 		<source src="astley.mp3" type="audio/mpeg">
-		Your browser does not support the audio element.
-	</audio>
-	      <p> YOURE RUNNING OUT OF TIME!</p>
-	      <video width="320" height="240" controls>
-  <source src="clocks.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-		      <hr>
-</video>
-      </section>
-        <h2> <strong>Here's some of my favorite drinks!</strong> </h2>
-	<ul>
-        <li> <em>Iced</em> coffee </li>
-        <li> Cold brew coffee </li>
-        <li> WATER </li>
-        <li> Boba! (i like to get different drinks, <em>unsweetened</em>!) </li>
-	</ul>
-        <figure>
-  			<img
-            		src="https://bloximages.newyork1.vip.townnews.com/feastmagazine.com/content/tncms/assets/v3/editorial/d/6b/d6ba9224-eb68-11e9-8817-6b7c6c8936cc/5d9f3db84e69d.image.jpg"
- 			alt="Kung Fu Tea">
-            <figcaption>Figure 1:My favorite boba place :)</figcaption>
-			</figure>
-         <picture>
-  		<source media="(min-width:650px)" 					
-        srcset="https://cdn.shopify.com/s/files/1/1135/9368/products/Gradys_Cold_Brew_Coffee_Concentrate_Bottle_6_Pack_5799dc66-263a-4a54-ba0a-ea89dcace41f_1024x1024.jpg?v=1533324919">
-  		<img src="img_orange_flowers.jpg" alt="Flowers"
-        style="width:auto;">
-		</picture>
-        <h3> Here's some other information (I also don't know what im gonna put here yet :/) </h3>
-        <p> i once again am unsure of what information is going to be put in this place i am very sad i mean sorry 
-          Fun fact! If you use the phrase <code>code</code> you can get text to look like code!
-          <pre> there once was
-          a man named john
-          then he went home
-          this was not a good poem
-          i am very sorry
-          </pre>
-	  <iframe src="https://yossshhhh.github.io/" title="Yossshhhh's other website!">
-</iframe>
-	  <canvas id="canvas">Your browser does not support the canvas tag.</canvas>
-<script>
-var c = document.getElementById("canvas");
-var ctx = c.getContext("2d");
-ctx.fillStyle = "#00F0FF";
-ctx.fillRect(0, 0, 200, 160);
-</script>
-<svg width="100" height="100">
-  <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="cyan" />
-	      </svg>
-	  <hr>
-		<form action="/action_page.php">
-        <fieldset> 
-        <legend>Contact Me: </legend>
-        
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <label for="pwd">Mother's maiden name:</label>
-  <input type="password" id="pwd" name="pwd" minlength="4"><br><br>
-  <label for="lname">Phone number:</label>
-  <input type="text" id="pnum" name="pnum"><br><br>
-  <label for="quantity">Number of Meetings you want to have (between 1 and 5):</label>
-  <input type="number" id="quantity" name="quantity" min="1" max="5"> <br><br>
-  <label for="lname">Email:</label>
-  <input type="email" id="email" name="email"><br><br>
-  <label for="appt">Choose a time when you're available:</label>
-  <input type="time" id="appt" name="appt">
-  <label for="days">Choose a day when you're available:</label>
-  <select name="days" id="days">
-    <optgroup label="Weekdays">
-      <option value="Monday">Monday</option>
-      <option value="Tuesday">Tuesday</option>
-      <option value="Wednesday">Wednesday</option>
-      <option value="Thursday">Thursday</option>
-      <option value="Friday">Friday</option>
-    </optgroup>
-    <optgroup label="Weekends">
-      <option value="Saturday">Saturday</option>
-      <option value="Sunday">Sunday</option>
-    </optgroup>
-			</select>
-	  <br><br>
-      <label for="date">Or choose a day from the calendar:</label>
-     
-<input type="date" id="date" name="date"> <br><br>
+<table>
+	<caption> My availability </caption>
+    <colgroup>
+    <col span="2" style="background-color:lightblue">
+    <col style="background-color:lightgreen">
+  </colgroup>
+  <tr>
+    <th>Monday, Wednesday, Friday</th>
+    <th>Tuesday, Thursday</th>
+    <th>Saturday, Sunday</th>
+  </tr>
+  <tr>
+    <td>After 2PM</td>
+    <td>After 1PM</td>
+    <td>After 10AM</td>
+  </tr>
 
- <label for="mtg">Choose a topic to talk about during our meeting:</label>
-  <input list="meetings" name="mtg" id="mtg">
-  <datalist id="meetings">
-    <option value="Work life">
-    <option value="Music">
-    <option value="Quarantine">
-    <option value="School">
-    <option value="Other">
-  </datalist>
-
-  <input type="submit" value="Submit">	
-  </fieldset>
-</form>
-<p>Feel free to contact me in order to set up an appointment for us to chat some more about simply anything!</p>
-    <hr>
-	<form action="/action_page.php">
-	<p>Random button that does nothing</p>
-  	<input type="button" value="Nothing to see here" onclick="msg()"> <br><br>
-	<script>
-	function msg() {
-	  alert("BOO! Did I scare you?!");
-	}
-	</script>		
-	<input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox">
- 	 <label for="checkbox1">Check this box if you read through my whole website!</label><br>
-	<label for="color1">Magical RGB values are given by adjusting the color of this box!</label>
- 	 <input type="color" id="color1" name="color1" value="#ffff00"><br><br>
-		<textarea id="w3review" name="w3review" rows="4" cols="50">
-Note: Please do not schedule an appointment and then fail to show up, I will not respond to any future requests after 2 missed appointments.
-  </textarea>
-        </form>
-        <hr>
-    <footer>
-      <p> Author: Adam Yoshinaga<br>
-      <a href="mailto:fake-email@ucsd.edu">fake-email@ucsd.edu</a></p>
-    </footer>
-	    </main>
-	</body>
-</html>
+</table>
