@@ -121,7 +121,18 @@ ctx.fillRect(0, 0, 200, 160);
 	  <br><br>
       <label for="date">Or choose a day from the calendar:</label>
      
-<input type="date" id="date" name="date">
+<input type="date" id="date" name="date"> <br><br>
+
+ <label for="mtg">Choose a topic to talk about during our meeting:</label>
+  <input list="meetings" name="mtg" id="mtg">
+  <datalist id="meetings">
+    <option value="Work life">
+    <option value="Music">
+    <option value="Quarantine">
+    <option value="School">
+    <option value="Other">
+  </datalist>
+
   <input type="submit" value="Submit">	
   </fieldset>
 </form>
@@ -139,7 +150,9 @@ ctx.fillRect(0, 0, 200, 160);
  	 <label for="checkbox1">Check this box if you read through my whole website!</label><br>
 	<label for="color1">Magical RGB values are given by adjusting the color of this box!</label>
  	 <input type="color" id="color1" name="color1" value="#ffff00"><br><br>
-		
+		<textarea id="w3review" name="w3review" rows="4" cols="50">
+Note: Please do not schedule an appointment and then fail to show up, I will not respond to any future requests after 2 missed appointments.
+  </textarea>
         </form>
         <hr>
     <footer>
