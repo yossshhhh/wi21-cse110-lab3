@@ -60,6 +60,7 @@
 			</figure>
          <picture>
   		<source media="(min-width:650px)" 					
+        
         srcset="https://cdn.shopify.com/s/files/1/1135/9368/products/Gradys_Cold_Brew_Coffee_Concentrate_Bottle_6_Pack_5799dc66-263a-4a54-ba0a-ea89dcace41f_1024x1024.jpg?v=1533324919">
   		<img src="img_orange_flowers.jpg" alt="Flowers"
         style="width:auto;">
@@ -137,8 +138,10 @@ ctx.fillRect(0, 0, 200, 160);
   </fieldset>
 </form>
 <p>Feel free to contact me in order to set up an appointment for us to chat some more about simply anything!</p>
-<table>
-	<caption> My availability </caption>
+<details>
+  <summary>My schedule</summary>
+  <table>
+	<caption> Blue: Weekdays, Green: Weekends </caption>
     <colgroup>
     <col span="2" style="background-color:lightblue">
     <col style="background-color:lightgreen">
@@ -155,8 +158,9 @@ ctx.fillRect(0, 0, 200, 160);
   </tr>
 
 </table>
+</details>
     <hr>
-	<form action="/action_page.php">a
+	<form action="/action_page.php">
 	<p>Random button that does nothing</p>
   	<input type="button" value="Nothing to see here" onclick="msg()"> <br><br>
 	<script>
@@ -172,6 +176,20 @@ ctx.fillRect(0, 0, 200, 160);
 Note: Please do not schedule an appointment and then fail to show up, I will not respond to any future requests after 2 missed appointments.
   </textarea>
         </form>
+        <button onclick="showContent()">Show hidden content</button>
+
+<template>
+  <h2>DUCKY</h2>
+  <img src="duck.jpg" width="214" height="204">
+</template>
+
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
         <hr>
     <footer>
       <p> Author: Adam Yoshinaga<br>
