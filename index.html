@@ -124,8 +124,17 @@ ctx.fillRect(0, 0, 200, 160);
 <p>Feel free to contact me in order to set up an appointment for us to chat some more about simply anything!</p>
     <hr>
 	<form action="/action_page.php">
-		<label for="button">Random button that does nothing:</label>
-		<input type="button" id="button1" name="button"><br><br>
+	<p>Random button that does nothing</p>
+	<form>
+  	<input type="button" value="Nothing to see here" onclick="msg()">
+	</form>
+
+	<script>
+	function msg() {
+	  alert("BOO! Did I scare you?!");
+	}
+	</script>
+		
 		<label for="checkbox">Check this box if you read through my entire website :)</label>
 		<input type="checkbox" id="checkbox1" name="checkbox"><br><br>
 		<label for="color">Magical RGB values are given by adjusting the color of this box</label>
