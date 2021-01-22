@@ -1,1 +1,23 @@
+.title {
+  background-color: orange;
+}
 
+#fname {
+  background-color: pink;
+}
+
+* {
+  background-color: lightgray;
+}
+
+p {
+  background-color: red;
+}
+
+a[target=_blank] {
+  background-color: aquamarine;
+}
+
+p:hover {
+  background-color: yellow;
+}
