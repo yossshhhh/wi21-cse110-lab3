@@ -21,3 +21,32 @@ a[target=_blank] {
 p:hover {
   background-color: yellow;
 }
+
+h1,h2,h3,h4 {
+  border: red 2px solid;
+}
+
+div header {
+  text-align: center;
+  color: chocolate;
+}
+
+ul > li {
+  background-color: darkolivegreen;
+}
+
+img ~ figcaption {
+  background-color: deeppink;
+}
+
+label + input {
+  background-color: greenyellow;
+}
+
+div.title {
+  background-color: hotpink;
+}
+
+
+
+
