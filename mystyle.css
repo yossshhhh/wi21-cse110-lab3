@@ -53,10 +53,29 @@ img ~ figcaption {
 
 label + input {
   background-color: greenyellow;
+  margin: 100px,25px,100px,25px;
+  padding: 100px,25px,100px,25px;
+  width: 80%;
+  height: 50px;
 }
 
 div.title {
   background-color: rgba(231,99,71,0.5);
+  margin: auto;
+}
+
+pre {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 
