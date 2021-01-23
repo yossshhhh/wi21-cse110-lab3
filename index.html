@@ -48,6 +48,53 @@ p{
 a:active {
 	background-color: yellow;
     }
+    
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header'
+    'menu main main main right'
+    'menu footer footer footer footer';
+  grid-gap: 10px;
+  background-color: hotpink;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: fuchsia;
+  }
+}
+    
+    
     </style>
   </head>
   <body>
@@ -59,6 +106,24 @@ a:active {
         <h4>Yoshinaga</h4>
         <p> <span style="color:darkorange">Yoshinaga</span> is an award winning Japanese last name. It is said that <span class = "a"> every </span> human being with the last name <span class="b">Yoshinaga </span> will conquer the world, or something along the lines of that.</p>
       </aside>
+      
+      <div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+</div>
+<div class="grid-container">
+  <div class="item1">WHAT</div>
+  <div class="item2">WHO</div>
+  <div class="item3">WHEN</div>  
+  <div class="item4">WHY</div>
+  <div class="item5">i bet you thought this was gonna say how</div>
+</div>
       <nav>
         <a href="https://yossshhhh.github.io">my first webpage</a>
       </nav>
