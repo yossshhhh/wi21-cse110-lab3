@@ -38,7 +38,7 @@ h1,h2,h3,h4 {
 
 div header {
   text-align: center;
-  color: chocolate;
+  text-color: chocolate;
   font-size: 3ch;
 }
 
@@ -49,6 +49,8 @@ ul > li {
 img ~ figcaption {
   background-color: deeppink;
   font-size: 2rem;
+  text-decoration: underline;
+  
 }
 
 label + input {
